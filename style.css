@@ -96,6 +96,10 @@ body {
     outline: none;
 }
 
+input::placeholder {
+    color: #cbd5e1;
+}
+
 #calculate {
     border: none;
     font-size: 1.25rem;
@@ -130,6 +134,7 @@ body {
 
 #description {
     width: 15.5rem;
+    color: #dc2626;
 }
 
 #more_info {
@@ -138,7 +143,7 @@ body {
 }
 
 #more_info a {
-    color: #16a34a;
+    color: #c9c9c9;
     display: flex;
     justify-content: center;
     align-items: center;
