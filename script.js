@@ -9,6 +9,7 @@ form.addEventListener('submit', function(event) {
     const bmi = (weight / (height * height)).toFixed(2);
 
     const value = document.getElementById('value');
+
     let description = '';
 
     value.classList.add('attention');
@@ -16,7 +17,7 @@ form.addEventListener('submit', function(event) {
     document.getElementById('infos').classList.remove('hidden');
 
     if (bmi < 18.5) {
-        description = 'Cuidado! Você está abaixo do peso.';
+        description = 'Os valores do "PESO" ou "ALTURA" podem estar incorretos.';
         value.classList.remove('attention');
         value.classList.add('above');
     } else if (bmi >= 18.6 && bmi <= 24.9) {
