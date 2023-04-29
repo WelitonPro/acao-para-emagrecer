@@ -17,7 +17,7 @@ form.addEventListener('submit', function(event) {
     document.getElementById('infos').classList.remove('hidden');
 
     if (bmi < 18.5) {
-        description = 'Os valores do "PESO" ou "ALTURA" podem estar incorretos.';
+        description = 'Os valores do PESO ou ALTURA podem estar incorretos.';
         value.classList.remove('attention');
         value.classList.add('above');
     } else if (bmi >= 18.6 && bmi <= 24.9) {
@@ -32,7 +32,7 @@ form.addEventListener('submit', function(event) {
         description = "Cuidado! Você está com obesidade moderada.";
     } else if (bmi > 35 && bmi <= 39.0) {
         description = "Cuidado! Você está com obesidade severa.";
-    } else {
+    } else (bmi > 39.1) {
         description = "Cuidado! Você está com obesidade morbida.";
     }
 
